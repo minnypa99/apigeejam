@@ -67,5 +67,3 @@ paths:
             application/json:
               schema:
                 type: object
-components:
-  schemas: {}
