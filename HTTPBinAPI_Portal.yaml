@@ -12,6 +12,8 @@ components:
       type: apiKey
       in: query       # can be "header", "query" or "cookie"
       name: apikey   # name of the header, query parameter or cookie
+security:
+  - ApiKeyAuth: []
 paths:
   /get:
     get:
