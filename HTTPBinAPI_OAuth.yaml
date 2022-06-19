@@ -13,7 +13,7 @@ components:
       flows:
         clientCredentials:
           tokenUrl: https://apidev.gcpkrce.net/oauth/client_credential/accesstoken
-          scopes:
+          scopes: {}
 security:
 - oauthToken: []
 paths:
