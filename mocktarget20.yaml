@@ -10,8 +10,8 @@ schemes:
 paths:
   /:
     get:
-      summary: View personalized greeting
-      operationId: View a personalized greeting
+      summary: View personalized greeting 
+      operationId: personalized greeting /
       description: View a personalized greeting for the specified or guest user.
       produces:
         - text/plain
@@ -27,33 +27,17 @@ paths:
   /help:
     get:
       summary: Get help
-      operationId: Get help
+      operationId: Get help /help
       description: View help information about available resources in HTML format.
       produces:
         - text/html
       responses:
         '200':
           description: Success
-  /user:
-    get:
-      summary: View personalized greeting
-      operationId: View personalized greeting
-      description: View a personalized greeting for the specified or guest user.
-      produces:
-        - text/plain
-      parameters:
-        - name: user
-          in: query
-          description: Your user name.
-          required: false
-          type: string
-      responses:
-        '200':
-          description: Success
   /iloveapis:
     get:
       summary: View API affirmation
-      operationId: View API affirmation
+      operationId: API affirmation /iloveapis
       description: View API affirmation in HTML format.
       produces:
         - text/html
@@ -63,7 +47,7 @@ paths:
   /ip:
     get:
       summary: View IP address
-      operationId: View IP address
+      operationId: IP address /ip
       description: View the IP address of the client in JSON format.
       produces:
         - application/json
@@ -73,7 +57,7 @@ paths:
   /xml:
     get:
       summary: View XML response
-      operationId: View XML response
+      operationId: XML response /xml
       description: View a sample response in XML format.
       produces:
         - application/xml
@@ -83,7 +67,7 @@ paths:
   /json:
     get:
       summary: View JSON response
-      operationId: View JSON response
+      operationId: JSON response /json
       description: View a sample response in JSON format.
       produces:
         - application/json
@@ -93,7 +77,7 @@ paths:
   /echo:
     get:
       summary: View request headers and body
-      operationId: View request headers and body
+      operationId: echo request /echo
       description: View the request headers and body in JSON format.
       produces:
         - application/json
@@ -106,7 +90,7 @@ paths:
         - application/json
         - application/xml
         - application/x-www-form-urlencoded
-      operationId: Send request and view request headers and body
+      operationId: echo request /echo
       description: 'Send a request and view the resulting request headers and body in JSON format.<p>The request payload can be specified using one of the following formats: application/json, application/x-www-form-urlencoded, or application/xml.'
       parameters:
         - name: body
@@ -121,7 +105,7 @@ paths:
   /statuscode/{code}:
     get:
       summary: View status code and message
-      operationId: View status code and message
+      operationId: status code and message /statuscode/{code}
       description: View status code and message for the specified value.
       produces:
         - application/json
